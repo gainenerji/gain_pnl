@@ -30,7 +30,7 @@ with tab1:
         time.sleep(5)
     st.success('Tablo başarıyla oluşturuldu')
     with st.container():
-        st.dataframe(wind1_data[options],use_container_width = True)
+        st.dataframe(wind1_data[options])
     
     col1,col2 = st.columns(2, gap = "large")
     with col1:
