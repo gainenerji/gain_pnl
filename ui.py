@@ -9,6 +9,9 @@ wind1_birim_excel = pd.read_excel("data/wind1_birim.xlsx")
 wind1_data = pd.DataFrame(wind1_excel)
 wind1_birim_data = pd.DataFrame(wind1_birim_excel)
 
+def do_stuff_on_page_load():
+    st.set_page_config(layout="wide")
+do_stuff_on_page_load()
 st.title("Gain Enerji Portal")
 tab1, tab2, tab3, tab4 = st.tabs(["Wind1", "Wind2", "Hydro1", "Hydro2"])
 
