@@ -28,9 +28,8 @@ with tab1:
         "Dengesizlik Tutarı (TL)","Dengesizlik Maliyeti (TL)","GÖP Satış Tutarı (TL)","GİP Satış Tutarı (TL)","GİP Alış Tutarı (TL)","Net GİP Tutarı (TL)",
         "Net GİP Kar-Zararı (TL)","Toplam Gelir (TL)","KUDUP (MWh)","Sapma Miktarı (MWh)","KUPST (TL)","İç Tasarruf","Dış Tasarruf"],
         default= ['Tarih', 'Saat',"Gün Öncesi Üretim Tahmini (MWh)","Gün İçi Üretim Tahmini Revizesi (MWh)","Gerçekleşen Üretim  (MWh)"],
-        
         )
-    st.dataframe(wind1_data[options])
+    st.dataframe(wind1_data[options],use_container_width= True)
     
     col1,col2 = st.columns(2, gap = "large")
     with col1:
