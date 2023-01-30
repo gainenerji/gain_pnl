@@ -29,7 +29,8 @@ with tab1:
     with st.spinner('Lütfen bekleyin'):
         time.sleep(5)
     st.success('Tablo başarıyla oluşturuldu')
-    st.dataframe(wind1_data[options],use_container_width = True)
+    with st.container():
+        st.dataframe(wind1_data[options],use_container_width = True)
     
     col1,col2 = st.columns(2, gap = "large")
     with col1:
