@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import time
 
 
@@ -33,7 +34,7 @@ with tab1:
         time.sleep(5)
     st.success('Tablo başarıyla oluşturuldu')
     with st.container():
-        st.dataframe(wind1_data[options])
+        st.dataframe(wind1_data[options], use_container_width = True)
     
     col1,col2 = st.columns(2, gap = "large")
     with col1:
