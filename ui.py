@@ -1,12 +1,16 @@
 import streamlit as st
 import pandas as pd
 import time
+from st_aggrid import AgGrid
+
 
 
 wind1_excel = pd.read_excel("wind1.xlsx")
 wind1_birim_excel = pd.read_excel("wind1_birim.xlsx")
 wind1_data = pd.DataFrame(wind1_excel)
 wind1_birim_data = pd.DataFrame(wind1_birim_excel)
+AgGrid(wind1_data)
+AgGrid(wind1_birim_data)
 st.title("Gain Enerji Portal")
 tab1, tab2, tab3, tab4 = st.tabs(["Wind1", "Wind2", "Hydro1", "Hydro2"])
 
