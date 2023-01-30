@@ -30,12 +30,7 @@ with tab1:
         default= ['Tarih', 'Saat',"Gün Öncesi Üretim Tahmini (MWh)","Gün İçi Üretim Tahmini Revizesi (MWh)","Gerçekleşen Üretim  (MWh)"],
         
         )
-    with st.spinner('Lütfen bekleyin'):
-        time.sleep(5)
-    st.success('Tablo başarıyla oluşturuldu')
-    coldata = st.columns(1)
-    with coldata:
-        st.dataframe(wind1_data[options] )
+    st.dataframe(wind1_data[options])
     
     col1,col2 = st.columns(2, gap = "large")
     with col1:
