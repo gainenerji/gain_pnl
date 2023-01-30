@@ -33,8 +33,9 @@ with tab1:
     with st.spinner('Lütfen bekleyin'):
         time.sleep(5)
     st.success('Tablo başarıyla oluşturuldu')
-    with st.container():
-        st.dataframe(wind1_data[options], use_container_width = True)
+    coldata = st.columns(1)
+    with coldata:
+        st.dataframe(wind1_data[options] )
     
     col1,col2 = st.columns(2, gap = "large")
     with col1:
