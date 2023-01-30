@@ -4,8 +4,8 @@ import time
 
 
 
-wind1_excel = pd.read_excel("/wind1.xlsx")
-wind1_birim_excel = pd.read_excel("/wind1_birim.xlsx")
+wind1_excel = pd.read_excel("gainenerji/gain_pnl/wind1.xlsx")
+wind1_birim_excel = pd.read_excel("gainenerji/gain_pnl/wind1_birim.xlsx")
 wind1_data = pd.DataFrame(wind1_excel)
 wind1_birim_data = pd.DataFrame(wind1_birim_excel)
 
