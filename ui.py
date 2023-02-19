@@ -1,3 +1,12 @@
+"""Created on Tue Jan 30 2023
+
+Portal Kullanıcı Arayüzü
+
+Gain Enerji 
+
+@author: Berkay Akpınar
+"""
+
 import streamlit as st
 import pandas as pd
 import numpy as np
